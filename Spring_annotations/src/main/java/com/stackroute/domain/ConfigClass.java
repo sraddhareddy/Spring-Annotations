@@ -11,12 +11,12 @@ public class ConfigClass {
     {
         Actor actor=new Actor();
         actor.setAge(34);
-        actor.setGender("female");
-        actor.setName("samantha");
+        actor.setGender("male");
+        actor.setName("Mahesh");
         return actor;
 
     }
-    @Bean(name={"oh baby","majili"})
+    @Bean(name={"BAN","Maharshi"})
     public Movie movieBean()//bean name is movieBean
     {
         Movie movie=new Movie(Allu());

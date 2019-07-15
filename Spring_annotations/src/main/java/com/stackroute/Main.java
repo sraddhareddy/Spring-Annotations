@@ -14,8 +14,24 @@ public class Main {
         Object ob;
         // System.out.println("Hello");
         AbstractApplicationContext context=new AnnotationConfigApplicationContext(ConfigClass.class);
-        context.getBean("oh baby", Movie.class).act();
+        context.getBean("BAN", Movie.class).act();
 
+//        System.out.println("loaded");
+        /*Movie movie=context.getBean("wanted",Movie.class);
+        movie.act();
+
+
+
+        *//*if(context.getBean("wanted",Movie.class)==context.getBean("wanted",Movie.class))
+        {
+            System.out.println("Equal");
+        }
+        else
+        {
+            System.out.println("not equal");
+        }*//*
+        context.getBean("beanLifeCycle");
+        context.registerShutdownHook();*/
 
 
 
