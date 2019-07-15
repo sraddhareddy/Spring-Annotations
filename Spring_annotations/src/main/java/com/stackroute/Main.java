@@ -12,12 +12,12 @@ public class Main {
         Object ob;
         // System.out.println("Hello");
         AbstractApplicationContext context=new AnnotationConfigApplicationContext(ConfigClass.class);
-        context.getBean("eega", Movie.class).show();
+        context.getBean("DJ", Movie.class).show();
         context.getBean("Prabhas",Actor.class).act();
+        context.getBean("beanLifecycleDemo");
 
 
-
-        if(context.getBean("Prabhas",Actor.class)==context.getBean("Nani",Actor.class))
+        if(context.getBean("Prabhas",Actor.class)==context.getBean("Allu",Actor.class))
         {
             System.out.println("Equal");
         }
@@ -25,6 +25,8 @@ public class Main {
         {
             System.out.println("not equal");
         }
+//        context.getBean("beanLifeCycle");
+        context.registerShutdownHook();
 
 
 
